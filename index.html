@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+<!--Projeto final - Disciplina Computação Gráfica
+	          Calculadora Mapa de Karnaugh
+	Alunos: Rodrigo Gradela  RA 146326
+			Marcelo Patricio RA 143469
+			Mateus Garcia    RA 147230
+-->
+
+
+<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css"> 
+		<title>KARNAUGH</title>
+
+	
+	</head>
+	
+	
+
+	
+
+	
+	<body onload="bleh(), criarmapa()">
+	
+			
+		<form oninput="criarmapa()">
+			
+			<h1>Calculadora Mapa de Karnaugh </h1>
+			<script src="js/scriptsMap.js"></script>
+		<div id="opcoesMap">	
+			<b>Defina as variáveis do mapa: </b><br><br>
+			
+				 <input class="radio" type="radio" name="QntVar"  value="2" checked="checked"> 2 variáveis <br>
+				 <input class="radio" type="radio" name="QntVar" value="3" > 3 variáveis <br>
+				 <input class="radio" type="radio" name="QntVar" value="4" > 4 variáveis
+		</div>	
+			
+			
+		</form>
+	
+	
+	<div id="containerCalcTab">
+		<p>Preencha o Mapa de Karnaugh, em seguida  clique botão  Calcular para obter a expressão booleana</p>
+		<p id="tabappend"></p>
+		<div id="botaoCalc"></div>
+	</div>
+	
+	<div id="resps">
+	
+		<p id="resposta"></p>
+		<p id="eq"></p>
+		<p id="respostared"></p>
+		<p id="eqred"></p>
+	
+	</div>
+		
+
+	</body>
+		
+	
+</html>
